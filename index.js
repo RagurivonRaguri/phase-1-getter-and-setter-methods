@@ -18,7 +18,11 @@ class Circle{
     set circumference(circumference){
         this.radius = (circumference/Math.PI)/2
     }
-    set area(area){
-        this.radius = Math.floor((Math.sqrt(area))/Math.PI)
+    set area(newArea) {
+        this.radius = Math.sqrt(newArea/Math.PI)
     }
-}
+  
+}let circle1 = new Circle(7)
+console.log(circle1.diameter);
+console.log(circle1.circumference);
+console.log(circle1.area);
